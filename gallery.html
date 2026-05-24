@@ -497,33 +497,11 @@
         window.addEventListener('scroll', onScroll, { passive: true });
         onScroll();
 
-        // Auto-load gallery from folders
-        // Requires a dev server with directory listing (VSCode Live Server, python -m http.server, etc.)
-        // Reads asset folders, filters image files, renders into the grid
-        const IMAGE_RE = /\.(jpe?g|png|webp|gif|avif)$/i;
-
-        async function loadFolder(folder) {
-            try {
-                const res = await fetch(folder + '/');
-                if (!res.ok) throw new Error('HTTP ' + res.status);
-                const html = await res.text();
-                const doc = new DOMParser().parseFromString(html, 'text/html');
-                const seen = new Set();
-                return Array.from(doc.querySelectorAll('a'))
-                    .map(a => decodeURIComponent(a.getAttribute('href') || ''))
-                    .map(href => href.split('/').pop().split('?')[0])
-                    .filter(name => name && IMAGE_RE.test(name) && !seen.has(name) && seen.add(name))
-                    .sort()
-                    .map(name => `${folder}/${name}`);
-            } catch (e) {
-                console.warn('Could not auto-load', folder, '— is the site served by a dev server?', e);
-                return null;
-            }
-        }
-
+        // Load gallery from assets/gallery.json
+        // (Edit that file to add or remove images per category.)
         function renderGrid(images, gridEl, countEl, label) {
             if (!images || images.length === 0) {
-                gridEl.innerHTML = `<div class="col-span-full py-12 text-center text-brand-ink/40 text-sm">No images yet in <code>${gridEl.dataset.grid}/</code></div>`;
+                gridEl.innerHTML = `<div class="col-span-full py-12 text-center text-brand-ink/40 text-sm">No images yet</div>`;
                 if (countEl) countEl.textContent = '0';
                 return;
             }
@@ -538,16 +516,24 @@
 
         (async () => {
             const groups = [
-                { folder: 'assets/meals', label: 'Bento meal' },
-                { folder: 'assets/trays', label: 'Tray' },
-                { folder: 'assets/catering', label: 'Catering' },
+                { key: 'meals', folder: 'assets/meals', label: 'Bento meal' },
+                { key: 'trays', folder: 'assets/trays', label: 'Tray' },
+                { key: 'catering', folder: 'assets/catering', label: 'Catering' },
             ];
-            const results = await Promise.all(groups.map(g => loadFolder(g.folder)));
-            groups.forEach((g, i) => {
-                const key = g.folder.split('/').pop();
-                const gridEl = document.querySelector(`[data-grid="${key}"]`);
-                const countEl = document.querySelector(`[data-count="${key}"]`);
-                renderGrid(results[i], gridEl, countEl, g.label);
+            let manifest = {};
+            try {
+                const res = await fetch('assets/gallery.json', { cache: 'no-cache' });
+                if (!res.ok) throw new Error('HTTP ' + res.status);
+                manifest = await res.json();
+            } catch (e) {
+                console.error('Could not load assets/gallery.json', e);
+            }
+            groups.forEach(g => {
+                const gridEl = document.querySelector(`[data-grid="${g.key}"]`);
+                const countEl = document.querySelector(`[data-count="${g.key}"]`);
+                const names = manifest[g.key] || [];
+                const paths = names.map(n => `${g.folder}/${n}`);
+                renderGrid(paths, gridEl, countEl, g.label);
             });
         })();
 
