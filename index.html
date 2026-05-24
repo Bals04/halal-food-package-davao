@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halal Food Package Davao City — Halal Catering & Tray Packages</title>
+    <meta name="description"
+        content="100% Halal catering and tray packages in Davao City. Perfect for parties, gatherings, and events. Starting at ₱2,400." />
+    <link rel="icon" href="assets/logo/logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            red: '#D72323',
+                            'red-deep': '#A41818',
+                            orange: '#F4A03A',
+                            'orange-deep': '#D9821A',
+                            green: '#2D5016',
+                            'green-deep': '#1F3A0F',
+                            cream: '#FBF6EE',
+                            parchment: '#F2E8D5',
+                            ink: '#2A1810',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['"Bricolage Grotesque"', 'system-ui', 'sans-serif'],
+                        sans: ['"Bricolage Grotesque"', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #FBF6EE;
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.84  0 0 0 0 0.14  0 0 0 0 0.14  0 0 0 0.05 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+            color: #2A1810;
+        }
+
+        /* Themed scrollbar */
+        ::-webkit-scrollbar {
+            width: 12px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F2E8D5;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #F4A03A, #D72323);
+            border: 3px solid #F2E8D5;
+            border-radius: 999px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, #D9821A, #A41818);
+        }
+
+        html {
+            scrollbar-color: #D72323 #F2E8D5;
+            scrollbar-width: thin;
+        }
+
+        /* Horizontal carousel scrollbar (slimmer) */
+        .no-scrollbar::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .no-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .no-scrollbar::-webkit-scrollbar-thumb {
+            background: rgba(215, 35, 35, 0.4);
+            border: none;
+            border-radius: 999px;
+        }
+
+        .no-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: rgba(215, 35, 35, 0.7);
+        }
+
+        /* Section title underline */
+        .title-underline::after {
+            content: "";
+            display: block;
+            width: 64px;
+            height: 4px;
+            margin-top: 14px;
+            background: linear-gradient(90deg, #D72323, #F4A03A);
+            border-radius: 999px;
+        }
+
+        .title-underline.center::after {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Marquee */
+        @keyframes marquee {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        .marquee-track {
+            animation: marquee 30s linear infinite;
+        }
+
+        /* Decorative flame divider */
+        .flame-divider {
+            background-image:
+                radial-gradient(circle at 20% 50%, rgba(244, 160, 58, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(215, 35, 35, 0.12) 0%, transparent 50%);
+        }
+
+        /* Hero polaroid float animation */
+        @keyframes floatA {
+            0%, 100% { transform: rotate(-8deg) translateY(0); }
+            50% { transform: rotate(-8deg) translateY(-10px); }
+        }
+        @keyframes floatB {
+            0%, 100% { transform: rotate(6deg) translateY(0); }
+            50% { transform: rotate(6deg) translateY(-8px); }
+        }
+        @keyframes floatC {
+            0%, 100% { transform: rotate(4deg) translateY(0); }
+            50% { transform: rotate(4deg) translateY(-12px); }
+        }
+        @keyframes floatD {
+            0%, 100% { transform: rotate(-5deg) translateY(0); }
+            50% { transform: rotate(-5deg) translateY(-9px); }
+        }
+        .hero-card-tl { animation: floatA 6s ease-in-out infinite; }
+        .hero-card-tr { animation: floatB 7s ease-in-out infinite; }
+        .hero-card-bl { animation: floatC 6.5s ease-in-out infinite; }
+        .hero-card-br { animation: floatD 7.5s ease-in-out infinite; }
+
+        /* Package card hover */
+        .pkg-card {
+            transition: transform 0.35s cubic-bezier(.2, .8, .2, 1), box-shadow 0.35s ease;
+        }
+
+        .pkg-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 45px -20px rgba(215, 35, 35, 0.4);
+        }
+
+        /* Gallery tabs */
+        .gallery-tab {
+            color: rgba(42, 24, 16, 0.6);
+        }
+
+        .gallery-tab:hover {
+            color: #D72323;
+        }
+
+        .gallery-tab.is-active {
+            background-color: #D72323;
+            color: white;
+            box-shadow: 0 6px 18px -8px rgba(215, 35, 35, 0.5);
+        }
+
+        /* Offer card hover */
+        .offer-card {
+            transition: transform 0.4s cubic-bezier(.2, .8, .2, 1), box-shadow 0.4s ease;
+        }
+
+        .offer-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 28px 50px -22px rgba(215, 35, 35, 0.3);
+        }
+
+        /* Halal badge ribbon */
+        .ribbon {
+            background: linear-gradient(135deg, #2D5016, #1F3A0F);
+        }
+
+        /* Nav scroll state */
+        .nav-scrolled {
+            background-color: rgba(251, 246, 238, 0.96);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px -15px rgba(42, 24, 16, 0.25);
+        }
+
+        /* Mobile slideover */
+        .slideover { position: fixed; inset: 0; z-index: 70; pointer-events: none; }
+        .slideover-backdrop {
+            position: absolute; inset: 0;
+            background: rgba(20, 12, 8, 0.55);
+            opacity: 0;
+            transition: opacity .3s ease;
+        }
+        .slideover-panel {
+            position: absolute; top: 0; left: 0; bottom: 0;
+            width: 86%; max-width: 340px;
+            background: #FBF6EE;
+            transform: translateX(-100%);
+            transition: transform .35s cubic-bezier(.4, 0, .2, 1);
+            display: flex; flex-direction: column;
+            box-shadow: 8px 0 40px -10px rgba(20, 12, 8, 0.4);
+        }
+        .slideover.is-open { pointer-events: auto; }
+        .slideover.is-open .slideover-backdrop { opacity: 1; }
+        .slideover.is-open .slideover-panel { transform: translateX(0); }
+
+        /* Reveal animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        .reveal.in {
+            opacity: 1;
+            transform: none;
+        }
+    </style>
+</head>
+
+<body class="font-sans antialiased">
+
+    <!-- ============ NAV (desktop pill) ============ -->
+    <header id="nav" class="hidden lg:flex fixed top-4 inset-x-0 z-50 px-4 transition-all duration-300 justify-center">
+        <div class="inline-flex items-center gap-4 lg:gap-6 rounded-full pl-1.5 pr-2 py-1.5 bg-brand-cream/90 backdrop-blur border-2 border-brand-red shadow-xl shadow-brand-ink/15">
+            <a href="#top" class="flex items-center gap-2 group">
+                <img src="assets/logo/logo.jpg" alt="Halal Food Package Davao City"
+                    class="h-10 w-10 rounded-full object-contain bg-white ring-1 ring-brand-red/15 p-0.5" />
+                <div class="leading-tight pr-1">
+                    <div class="font-display font-extrabold text-brand-red text-[13px] tracking-wide">HALAL FOOD PACKAGE</div>
+                    <div class="text-[9px] tracking-[0.25em] text-brand-orange-deep font-semibold uppercase">Davao City</div>
+                </div>
+            </a>
+            <nav class="flex items-center gap-6 text-sm font-medium text-brand-ink">
+                <a href="#packages" class="hover:text-brand-red transition">Packages</a>
+                <a href="gallery.html" class="hover:text-brand-red transition">Gallery</a>
+                <a href="#events" class="hover:text-brand-red transition">Events</a>
+                <a href="#why" class="hover:text-brand-red transition">Why Us</a>
+                <a href="#contact" class="hover:text-brand-red transition">Contact</a>
+            </nav>
+            <a href="https://www.facebook.com/profile.php?id=61590159478910" target="_blank" rel="noopener"
+                class="inline-flex items-center gap-2 rounded-full bg-brand-red hover:bg-[#1877F2] hover:shadow-[#1877F2]/40 text-white text-sm font-semibold pl-1 pr-4 py-1 transition-all duration-300 shadow-md shadow-brand-red/30">
+                <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-[#1877F2] shadow-inner">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="text-white">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                    </svg>
+                </span>
+                Message us on FB
+            </a>
+        </div>
+    </header>
+
+    <!-- ============ MOBILE HAMBURGER (left) ============ -->
+    <button id="mobileMenuBtn" type="button" aria-label="Open menu" aria-expanded="false"
+        class="lg:hidden fixed top-4 left-4 z-50 inline-flex items-center justify-center w-11 h-11 rounded-full bg-brand-red text-white shadow-xl shadow-brand-ink/25 border-2 border-brand-cream hover:bg-brand-red-deep transition">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+    </button>
+
+    <!-- ============ MOBILE SLIDEOVER ============ -->
+    <div id="slideover" class="slideover lg:hidden" aria-hidden="true">
+        <div class="slideover-backdrop" data-close-slideover></div>
+        <aside class="slideover-panel" role="dialog" aria-label="Site navigation">
+            <!-- Top: logo + close -->
+            <div class="flex items-center justify-between gap-3 p-5 border-b border-brand-ink/10">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="assets/logo/logo.jpg" alt="Halal Food Package Davao City"
+                        class="h-12 w-12 rounded-full object-contain bg-white ring-2 ring-brand-red/20 p-0.5" />
+                    <div class="leading-tight">
+                        <div class="font-display font-extrabold text-brand-red text-sm tracking-wide">HALAL FOOD PACKAGE</div>
+                        <div class="text-[9px] tracking-[0.25em] text-brand-orange-deep font-semibold uppercase">Davao City</div>
+                    </div>
+                </a>
+                <button type="button" data-close-slideover aria-label="Close menu"
+                    class="inline-flex items-center justify-center w-9 h-9 rounded-full text-brand-ink/70 hover:bg-brand-red/10 hover:text-brand-red transition flex-shrink-0">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Links -->
+            <nav class="flex-1 overflow-y-auto p-3 flex flex-col gap-1">
+                <a href="#packages" data-close-slideover class="group/link px-4 py-3.5 rounded-xl hover:bg-brand-red hover:text-white text-brand-ink font-medium transition flex items-center justify-between">
+                    <span class="flex items-center gap-3">
+                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-brand-red/10 group-hover/link:bg-white/20 text-brand-red group-hover/link:text-white transition">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                                <line x1="12" y1="22.08" x2="12" y2="12" />
+                            </svg>
+                        </span>
+                        Packages
+                    </span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6" /></svg>
+                </a>
+                <a href="gallery.html" data-close-slideover class="group/link px-4 py-3.5 rounded-xl hover:bg-brand-red hover:text-white text-brand-ink font-medium transition flex items-center justify-between">
+                    <span class="flex items-center gap-3">
+                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-brand-orange/15 group-hover/link:bg-white/20 text-brand-orange-deep group-hover/link:text-white transition">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="7" height="7" rx="1" />
+                                <rect x="14" y="3" width="7" height="7" rx="1" />
+                                <rect x="3" y="14" width="7" height="7" rx="1" />
+                                <rect x="14" y="14" width="7" height="7" rx="1" />
+                            </svg>
+                        </span>
+                        Gallery
+                    </span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6" /></svg>
+                </a>
+                <a href="#events" data-close-slideover class="group/link px-4 py-3.5 rounded-xl hover:bg-brand-red hover:text-white text-brand-ink font-medium transition flex items-center justify-between">
+                    <span class="flex items-center gap-3">
+                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-brand-green/15 group-hover/link:bg-white/20 text-brand-green group-hover/link:text-white transition">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 18h18" /><path d="M4 18a8 8 0 0 1 16 0" /><path d="M12 6V3" /><path d="M10 3h4" />
+                            </svg>
+                        </span>
+                        Events
+                    </span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6" /></svg>
+                </a>
+                <a href="#why" data-close-slideover class="group/link px-4 py-3.5 rounded-xl hover:bg-brand-red hover:text-white text-brand-ink font-medium transition flex items-center justify-between">
+                    <span class="flex items-center gap-3">
+                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-brand-red/10 group-hover/link:bg-white/20 text-brand-red group-hover/link:text-white transition">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" /><line x1="12" y1="16" x2="12" y2="12" /><line x1="12" y1="8" x2="12.01" y2="8" />
+                            </svg>
+                        </span>
+                        Why Us
+                    </span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6" /></svg>
+                </a>
+                <a href="#contact" data-close-slideover class="group/link px-4 py-3.5 rounded-xl hover:bg-brand-red hover:text-white text-brand-ink font-medium transition flex items-center justify-between">
+                    <span class="flex items-center gap-3">
+                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-brand-orange/15 group-hover/link:bg-white/20 text-brand-orange-deep group-hover/link:text-white transition">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </span>
+                        Contact
+                    </span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6" /></svg>
+                </a>
+            </nav>
+
+            <!-- Footer: Message us CTA -->
+            <div class="p-4 border-t border-brand-ink/10">
+                <a href="https://www.facebook.com/profile.php?id=61590159478910" target="_blank" rel="noopener" data-close-slideover
+                    class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-brand-red hover:bg-brand-red-deep text-white font-bold px-4 py-3.5 transition shadow-md shadow-brand-red/30">
+                    <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#1877F2]">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" class="text-white">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg>
+                    </span>
+                    Message us on FB
+                </a>
+            </div>
+        </aside>
+    </div>
+
+    <!-- ============ HERO (centered, floating polaroids) ============ -->
+    <section id="top" class="relative min-h-[100svh] w-full overflow-hidden bg-brand-cream">
+        <!-- Warm gradient + subtle pattern background -->
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-gradient-to-br from-brand-cream via-brand-parchment to-brand-orange/20"></div>
+            <div class="absolute inset-0 opacity-[0.07]"
+                style="background-image: url(&quot;data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><path d='M60 10l8 30 30 8-30 8-8 30-8-30-30-8 30-8z' fill='%23D72323'/></svg>&quot;);">
+            </div>
+            <!-- Soft blurred color blobs -->
+            <div class="pointer-events-none absolute -top-20 -left-20 w-96 h-96 rounded-full bg-brand-orange/30 blur-3xl"></div>
+            <div class="pointer-events-none absolute -bottom-20 -right-20 w-96 h-96 rounded-full bg-brand-red/20 blur-3xl"></div>
+        </div>
+
+        <!-- Floating polaroid image cards -->
+        <!-- Top-left -->
+        <div class="hero-card hero-card-tl absolute hidden md:block top-24 lg:top-28 left-4 lg:left-10 w-44 lg:w-56 aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl ring-4 ring-white -rotate-[8deg] z-10">
+            <img src="assets/hero/698296391_977016205209887_6352887152557203734_n.jpg" alt="Saucy halal chicken close-up"
+                class="w-full h-full object-cover" />
+        </div>
+        <!-- Top-right -->
+        <div class="hero-card hero-card-tr absolute hidden md:block top-28 right-4 lg:right-10 w-40 lg:w-52 aspect-square rounded-2xl overflow-hidden shadow-2xl ring-4 ring-white rotate-[6deg] z-10">
+            <img src="assets/trays/697353974_977016025209905_215626185602181145_n.jpg" alt="Halal catering trays"
+                class="w-full h-full object-cover" />
+        </div>
+        <!-- Bottom-left -->
+        <div class="hero-card hero-card-bl absolute hidden md:block bottom-20 left-6 lg:left-16 w-40 lg:w-52 aspect-square rounded-2xl overflow-hidden shadow-2xl ring-4 ring-white rotate-[4deg] z-10">
+            <img src="assets/meals/Screenshot 2026-05-24 231157.png" alt="Colorful bento meals"
+                class="w-full h-full object-cover" />
+        </div>
+        <!-- Bottom-right -->
+        <div class="hero-card hero-card-br absolute hidden md:block bottom-16 right-6 lg:right-20 w-44 lg:w-56 aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl ring-4 ring-white -rotate-[5deg] z-10">
+            <img src="assets/meals/705350652_122097587319338649_2829371389241556217_n.jpg" alt="Bento meals spread"
+                class="w-full h-full object-cover" />
+        </div>
+
+        <!-- Centered content -->
+        <div class="relative z-20 max-w-3xl mx-auto px-5 lg:px-10 pt-36 lg:pt-44 pb-20 lg:pb-28 min-h-[100svh] flex flex-col justify-center items-center text-center">
+            <span class="inline-flex items-center gap-2 rounded-full ribbon text-white px-4 py-1.5 text-xs font-bold tracking-wider uppercase shadow-lg">
+                <span class="text-base leading-none">☪</span> 100% Halal Certified
+            </span>
+            <h1 class="mt-6 font-display font-black text-brand-ink text-5xl sm:text-6xl lg:text-7xl leading-[1.05]">
+                Halal Food Package <br /> <span class="text-brand-red">Davao City</span>
+            </h1>
+            <p class="mt-6 text-lg lg:text-xl text-brand-ink/75 max-w-xl leading-relaxed">
+                Delicious. Halal. Made with Care.
+            </p>
+            <div class="mt-9 flex flex-wrap justify-center gap-3">
+                <a href="#packages"
+                    class="inline-flex items-center gap-2 rounded-full bg-brand-red hover:bg-brand-red-deep text-white font-bold px-7 py-3.5 transition shadow-xl shadow-brand-red/30">
+                    See Packages
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        <polyline points="12 5 19 12 12 19" />
+                    </svg>
+                </a>
+                <a href="gallery.html"
+                    class="inline-flex items-center gap-2 rounded-full bg-brand-orange hover:bg-brand-orange-deep text-white font-bold px-7 py-3.5 transition shadow-xl shadow-brand-orange/30">
+                    View Gallery
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="7" height="7" rx="1" />
+                        <rect x="14" y="3" width="7" height="7" rx="1" />
+                        <rect x="3" y="14" width="7" height="7" rx="1" />
+                        <rect x="14" y="14" width="7" height="7" rx="1" />
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61590159478910" target="_blank" rel="noopener"
+                    class="group/fb inline-flex items-center gap-2 rounded-full bg-white hover:bg-[#1877F2] hover:text-white hover:border-[#1877F2] hover:shadow-[#1877F2]/40 text-brand-ink font-semibold px-7 py-3.5 transition-all duration-300 border border-brand-ink/10 shadow-md">
+                    <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#1877F2] group-hover/fb:bg-white transition-colors duration-300">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" class="text-white group-hover/fb:text-[#1877F2] transition-colors duration-300">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg>
+                    </span>
+                    Message us
+                </a>
+            </div>
+
+            <!-- Quick stats -->
+            <div class="mt-12 grid grid-cols-3 gap-2 sm:gap-6 max-w-lg w-full">
+                <div>
+                    <div class="font-display font-black text-3xl lg:text-4xl text-brand-red">
+                        <span data-count-to="2022" data-count-format="plain">0</span>
+                    </div>
+                    <div class="text-[10px] sm:text-xs uppercase tracking-wider text-brand-ink/60 mt-1 font-semibold">Since</div>
+                </div>
+                <div class="border-l border-brand-ink/15 pl-2 sm:pl-4">
+                    <div class="font-display font-black text-3xl lg:text-4xl text-brand-red">
+                        <span data-count-to="4000">0</span><span class="text-brand-orange">+</span>
+                    </div>
+                    <div class="text-[10px] sm:text-xs uppercase tracking-wider text-brand-ink/60 mt-1 font-semibold">Clients Served</div>
+                </div>
+                <div class="border-l border-brand-ink/15 pl-2 sm:pl-4">
+                    <div class="flex items-center justify-center h-9 lg:h-12">
+                        <span class="inline-flex items-center justify-center w-9 h-9 lg:w-11 lg:h-11 rounded-full bg-brand-green text-white shadow-md">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="text-[10px] sm:text-xs uppercase tracking-wider text-brand-ink/60 mt-1 font-semibold">PhilGEPS Registered</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll cue -->
+        <a href="#why" aria-label="Scroll" class="hidden lg:flex absolute bottom-6 left-1/2 -translate-x-1/2 z-20 text-brand-ink/60 hover:text-brand-red flex-col items-center gap-1">
+            <span class="text-[10px] uppercase tracking-[0.3em]">Scroll</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="animate-bounce">
+                <polyline points="6 9 12 15 18 9" />
+            </svg>
+        </a>
+    </section>
+
+    <!-- ============ WHAT WE OFFER ============ -->
+    <section id="why" class="relative max-w-7xl mx-auto px-5 lg:px-10 py-20 lg:py-28 overflow-hidden">
+        <!-- Decorative blurred blobs -->
+        <div class="pointer-events-none absolute -top-10 right-10 w-72 h-72 rounded-full bg-brand-orange/15 blur-3xl"></div>
+        <div class="pointer-events-none absolute bottom-10 -left-10 w-72 h-72 rounded-full bg-brand-red/10 blur-3xl"></div>
+
+        <!-- Section header -->
+        <div class="relative max-w-3xl mx-auto text-center mb-16 lg:mb-20">
+            <span class="inline-flex items-center gap-2 text-brand-red font-semibold text-sm tracking-[0.25em] uppercase">
+                <span class="w-8 h-px bg-brand-red"></span>
+                What We Offer
+                <span class="w-8 h-px bg-brand-red"></span>
+            </span>
+            <h2 class="mt-3 font-display font-black text-4xl lg:text-5xl text-brand-ink leading-[1.05]">
+                From Single Meals <br />to <span class="text-brand-red">Full Spreads</span>
+            </h2>
+            <p class="mt-6 text-brand-ink/70 text-lg leading-relaxed">
+                Three ways to enjoy 100% halal food — pick what fits your day.
+            </p>
+        </div>
+
+        <!-- Alternating rows -->
+        <div class="relative space-y-16 lg:space-y-24">
+
+            <!-- 01 · Bento Meals — Image LEFT -->
+            <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                <div class="relative order-1 lg:order-1">
+                    <div class="absolute -top-4 -left-4 w-full h-full rounded-3xl bg-brand-orange/20 -z-0"></div>
+                    <img src="assets/meals/Screenshot 2026-05-24 231320.png"
+                        alt="Halal bento meals — rice, fried chicken, sides"
+                        class="relative w-full aspect-[4/3] object-cover rounded-3xl shadow-2xl" />
+                    <div class="absolute -bottom-5 -right-5 hidden md:flex items-center gap-3 bg-white text-brand-ink px-5 py-3.5 rounded-2xl shadow-xl">
+                        <div class="w-10 h-10 rounded-xl bg-brand-orange flex items-center justify-center text-white">
+                            <!-- simple-icons:bento -->
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M5.4545 0C2.4438 0 0 2.4438 0 5.4545v13.091C0 21.5562 2.4438 24 5.4545 24h13.091C21.5562 24 24 21.5562 24 18.5455V5.4545C24 2.4438 21.5562 0 18.5455 0H5.4545zm5.0904 5.4545h2.91v2.91h-2.91v-2.91zm-5.0904 0h2.91v2.91h-2.91v-2.91zm10.181 0h2.91v2.91h-2.91v-2.91zm-5.0904 5.0905h2.91v2.91h-2.91v-2.91zm-5.0904 0h2.91v2.91h-2.91v-2.91zm10.181 0h2.91v2.91h-2.91v-2.91zm-5.0904 5.0905h2.91v2.91h-2.91v-2.91zm-5.0904 0h2.91v2.91h-2.91v-2.91zm10.181 0h2.91v2.91h-2.91v-2.91z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="text-[10px] uppercase tracking-widest font-bold text-brand-ink/60">Offering 01</div>
+                            <div class="font-display font-bold text-base leading-none mt-0.5">Bento Meals</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-2 lg:order-2">
+                    <span class="inline-block font-display font-black text-7xl lg:text-8xl text-brand-orange leading-none drop-shadow-sm">01</span>
+                    <h3 class="mt-2 font-display font-black text-3xl lg:text-4xl text-brand-ink">Bento Meals</h3>
+                    <p class="mt-5 text-brand-ink/75 text-lg leading-relaxed">
+                        Single-serve halal bento boxes packed fresh — rice, viand, and sides. Perfect for lunch runs,
+                        office orders, and grab-and-go meals.
+                    </p>
+                    <ul class="mt-6 space-y-2.5">
+                        <li class="flex items-center gap-3 text-brand-ink/85">
+                            <span class="w-5 h-5 rounded-full bg-brand-orange/15 flex items-center justify-center flex-shrink-0">
+                                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#D9821A" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                            </span>
+                            Freshly cooked daily
+                        </li>
+                        <li class="flex items-center gap-3 text-brand-ink/85">
+                            <span class="w-5 h-5 rounded-full bg-brand-orange/15 flex items-center justify-center flex-shrink-0">
+                                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#D9821A" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                            </span>
+                            Generous, filling portions
+                        </li>
+                        <li class="flex items-center gap-3 text-brand-ink/85">
+                            <span class="w-5 h-5 rounded-full bg-brand-orange/15 flex items-center justify-center flex-shrink-0">
+                                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#D9821A" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                            </span>
+                            Ready for pickup or delivery
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 02 · Catering Services — Description LEFT — Image RIGHT -->
+            <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                <div class="order-2 lg:order-1">
+                    <span class="inline-block font-display font-black text-7xl lg:text-8xl text-brand-red leading-none drop-shadow-sm">02</span>
+                    <h3 class="mt-2 font-display font-black text-3xl lg:text-4xl text-brand-ink">Catering Services</h3>
+                    <p class="mt-5 text-brand-ink/75 text-lg leading-relaxed">
+                        Full halal buffet setup for parties, gatherings, and events. Chafing dishes, floral styling,
+                        and on-site setup — we handle every detail so you can host with ease.
+                    </p>
+                    <ul class="mt-6 space-y-2.5">
+                        <li class="flex items-center gap-3 text-brand-ink/85">
+                            <span class="w-5 h-5 rounded-full bg-brand-red/15 flex items-center justify-center flex-shrink-0">
+                                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#A41818" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                            </span>
+                            Buffet setup with chafing dishes
+                        </li>
+                        <li class="flex items-center gap-3 text-brand-ink/85">
+                            <span class="w-5 h-5 rounded-full bg-brand-red/15 flex items-center justify-center flex-shrink-0">
+                                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#A41818" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                            </span>
+                            Floral table styling included
+                        </li>
+                        <li class="flex items-center gap-3 text-brand-ink/85">
+                            <span class="w-5 h-5 rounded-full bg-brand-red/15 flex items-center justify-center flex-shrink-0">
+                                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#A41818" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                            </span>
+                            We deliver and set up on-site
+                        </li>
+                    </ul>
+                </div>
+                <div class="relative order-1 lg:order-2">
+                    <div class="absolute -top-4 -right-4 w-full h-full rounded-3xl bg-brand-red/20 -z-0"></div>
+                    <img src="assets/catering/596151745_850400451204797_6444937697152444362_n.jpg"
+                        alt="Full buffet setup with chafing dishes and floral garnish"
+                        class="relative w-full aspect-[4/3] object-cover rounded-3xl shadow-2xl" />
+                    <div class="absolute -bottom-5 -left-5 hidden md:flex items-center gap-3 bg-white text-brand-ink px-5 py-3.5 rounded-2xl shadow-xl">
+                        <div class="w-10 h-10 rounded-xl bg-brand-red flex items-center justify-center text-white">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 18h18" />
+                                <path d="M4 18a8 8 0 0 1 16 0" />
+                                <path d="M12 6V3" />
+                                <path d="M10 3h4" />
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="text-[10px] uppercase tracking-widest font-bold text-brand-ink/60">Offering 02</div>
+                            <div class="font-display font-bold text-base leading-none mt-0.5">Catering Services</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 03 · Food Packages — Image LEFT -->
+            <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                <div class="relative order-1 lg:order-1">
+                    <div class="absolute -top-4 -left-4 w-full h-full rounded-3xl bg-brand-green/15 -z-0"></div>
+                    <img src="assets/trays/697353974_977016025209905_215626185602181145_n.jpg"
+                        alt="Halal food packages — large catering trays"
+                        class="relative w-full aspect-[4/3] object-cover rounded-3xl shadow-2xl" />
+                    <div class="absolute -bottom-5 -right-5 hidden md:flex items-center gap-3 bg-white text-brand-ink px-5 py-3.5 rounded-2xl shadow-xl">
+                        <div class="w-10 h-10 rounded-xl ribbon flex items-center justify-center text-white">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                                <line x1="12" y1="22.08" x2="12" y2="12" />
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="text-[10px] uppercase tracking-widest font-bold text-brand-ink/60">Offering 03</div>
+                            <div class="font-display font-bold text-base leading-none mt-0.5">Food Packages</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-2 lg:order-2">
+                    <span class="inline-block font-display font-black text-7xl lg:text-8xl text-brand-green leading-none drop-shadow-sm">03</span>
+                    <h3 class="mt-2 font-display font-black text-3xl lg:text-4xl text-brand-ink">Food Packages</h3>
+                    <p class="mt-5 text-brand-ink/75 text-lg leading-relaxed">
+                        Medium and large tray packages with 6 viands plus free mixed fruits. Easy, all-in-one ordering
+                        for groups of 15–25.
+                    </p>
+                    <ul class="mt-6 space-y-2.5">
+                        <li class="flex items-center gap-3 text-brand-ink/85">
+                            <span class="w-5 h-5 rounded-full bg-brand-green/15 flex items-center justify-center flex-shrink-0">
+                                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2D5016" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                            </span>
+                            6 viands per tray
+                        </li>
+                        <li class="flex items-center gap-3 text-brand-ink/85">
+                            <span class="w-5 h-5 rounded-full bg-brand-green/15 flex items-center justify-center flex-shrink-0">
+                                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2D5016" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                            </span>
+                            FREE mixed fruits included
+                        </li>
+                        <li class="flex items-center gap-3 text-brand-ink/85">
+                            <span class="w-5 h-5 rounded-full bg-brand-green/15 flex items-center justify-center flex-shrink-0">
+                                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2D5016" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                            </span>
+                            Starting at <strong class="text-brand-red">₱2,400</strong> only
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PACKAGES ============ -->
+    <section id="packages" class="relative py-20 lg:py-28 bg-brand-green text-brand-cream overflow-hidden flame-divider">
+        <!-- subtle decorative pattern -->
+        <div class="absolute inset-0 opacity-10"
+            style="background-image: url(&quot;data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60'><path d='M30 0 L37 23 L60 30 L37 37 L30 60 L23 37 L0 30 L23 23 Z' fill='%23F4A03A'/></svg>&quot;);">
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-5 lg:px-10">
+            <div class="text-center max-w-2xl mx-auto">
+                <span class="text-brand-orange font-semibold text-sm tracking-[0.25em] uppercase">Our Packages</span>
+                <h2 class="mt-3 font-display font-black text-4xl lg:text-5xl title-underline center">
+                    Halal Food Packages
+                </h2>
+                <p class="mt-6 text-brand-cream/80 text-lg">
+                    Two tray sizes. One unforgettable spread. Every package includes 6 viands and free mixed fruits.
+                </p>
+            </div>
+
+            <div class="mt-14 grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Medium Tray -->
+                <div class="pkg-card relative bg-brand-cream text-brand-ink rounded-3xl p-8 lg:p-10 shadow-2xl">
+                    <div class="absolute -top-4 left-8 inline-flex items-center gap-1.5 rounded-full bg-brand-orange text-white px-4 py-1.5 text-xs font-bold uppercase tracking-wider shadow-md">
+                        Medium Tray
+                    </div>
+                    <div class="mt-3 flex items-baseline gap-2">
+                        <span class="font-display font-black text-5xl lg:text-6xl text-brand-red">₱2,400</span>
+                        <span class="text-brand-ink/50 text-sm font-medium uppercase tracking-widest">only</span>
+                    </div>
+                    <p class="mt-2 text-brand-green font-semibold flex items-center gap-2">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                        Good for 15–20 pax
+                    </p>
+
+                    <ul class="mt-7 space-y-3 text-brand-ink/85">
+                        <li class="flex items-start gap-3">
+                            <span class="mt-0.5 w-5 h-5 rounded-full bg-brand-green text-white flex items-center justify-center flex-shrink-0">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                            </span>
+                            <span><strong>6 viands</strong> — your choice from our halal menu</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="mt-0.5 w-5 h-5 rounded-full bg-brand-green text-white flex items-center justify-center flex-shrink-0">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                            </span>
+                            <span><strong>FREE mixed fruits</strong> included</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="mt-0.5 w-5 h-5 rounded-full bg-brand-green text-white flex items-center justify-center flex-shrink-0">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                            </span>
+                            <span>Fresh, halal-prepared trays</span>
+                        </li>
+                    </ul>
+
+                    <a href="#contact"
+                        class="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-red hover:bg-brand-red-deep text-white font-bold px-6 py-3.5 transition shadow-lg shadow-brand-red/30">
+                        Order Medium Tray
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Large Tray -->
+                <div class="pkg-card relative bg-brand-cream text-brand-ink rounded-3xl p-8 lg:p-10 shadow-2xl ring-4 ring-brand-orange/40">
+                    <div class="absolute -top-4 left-8 inline-flex items-center gap-1.5 rounded-full bg-brand-red text-white px-4 py-1.5 text-xs font-bold uppercase tracking-wider shadow-md">
+                        Large Tray · Best Value
+                    </div>
+                    <div class="mt-3 flex items-baseline gap-2">
+                        <span class="font-display font-black text-5xl lg:text-6xl text-brand-red">₱3,200</span>
+                        <span class="text-brand-ink/50 text-sm font-medium uppercase tracking-widest">only</span>
+                    </div>
+                    <p class="mt-2 text-brand-green font-semibold flex items-center gap-2">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                        Good for 20–25 pax
+                    </p>
+
+                    <ul class="mt-7 space-y-3 text-brand-ink/85">
+                        <li class="flex items-start gap-3">
+                            <span class="mt-0.5 w-5 h-5 rounded-full bg-brand-green text-white flex items-center justify-center flex-shrink-0">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                            </span>
+                            <span><strong>6 viands</strong> — your choice from our halal menu</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="mt-0.5 w-5 h-5 rounded-full bg-brand-green text-white flex items-center justify-center flex-shrink-0">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                            </span>
+                            <span><strong>FREE mixed fruits</strong> included</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="mt-0.5 w-5 h-5 rounded-full bg-brand-green text-white flex items-center justify-center flex-shrink-0">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                            </span>
+                            <span>Bigger spread for bigger gatherings</span>
+                        </li>
+                    </ul>
+
+                    <a href="#contact"
+                        class="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-red hover:bg-brand-red-deep text-white font-bold px-6 py-3.5 transition shadow-lg shadow-brand-red/30">
+                        Order Large Tray
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <p class="mt-10 text-center text-brand-cream/70 text-sm">
+                Custom orders for bigger events? <a href="https://www.facebook.com/profile.php?id=61590159478910" target="_blank" rel="noopener" class="text-brand-orange hover:text-white font-semibold underline underline-offset-4">Message us</a> — we'll work it out with you.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- ============ EVENTS / CATERING ============ -->
+    <section id="events" class="relative py-20 lg:py-28 bg-brand-red-deep text-brand-cream overflow-hidden">
+        <!-- 8-pointed Islamic star pattern (subtle, halal-celebration aesthetic) -->
+        <div class="absolute inset-0 opacity-[0.08]"
+            style="background-image: url(&quot;data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><g fill='none' stroke='%23F4A03A' stroke-width='1.2'><path d='M50 10 L62 38 L90 50 L62 62 L50 90 L38 62 L10 50 L38 38 Z'/><path d='M50 22 L58 42 L78 50 L58 58 L50 78 L42 58 L22 50 L42 42 Z'/><circle cx='50' cy='50' r='3'/></g></svg>&quot;);">
+        </div>
+        <!-- Soft glow blobs -->
+        <div class="pointer-events-none absolute -top-32 -left-32 w-96 h-96 rounded-full bg-brand-orange/15 blur-3xl"></div>
+        <div class="pointer-events-none absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-brand-orange/10 blur-3xl"></div>
+
+        <div class="relative max-w-7xl mx-auto px-5 lg:px-10">
+            <!-- Header -->
+            <div class="max-w-3xl mx-auto text-center mb-14">
+                <span class="inline-flex items-center gap-2 text-brand-orange font-semibold text-sm tracking-[0.25em] uppercase">
+                    <span class="w-8 h-px bg-brand-orange"></span>
+                    Catering for Events
+                    <span class="w-8 h-px bg-brand-orange"></span>
+                </span>
+                <h2 class="mt-3 font-display font-black text-4xl lg:text-5xl">
+                    Built for Parties, Gatherings <br /><span class="text-brand-orange">& Celebrations</span>
+                </h2>
+                <p class="mt-6 text-brand-cream/80 text-lg leading-relaxed">
+                    From intimate family gatherings to large community events — we bring the halal feast to you,
+                    fully set up and ready to serve.
+                </p>
+            </div>
+
+            <!-- Mosaic gallery -->
+            <div class="grid grid-cols-12 gap-4 lg:gap-5 max-w-6xl mx-auto">
+                <div class="col-span-12 md:col-span-7 row-span-2 relative group overflow-hidden rounded-3xl aspect-[4/3] md:aspect-auto shadow-2xl">
+                    <img src="assets/catering/596151745_850400451204797_6444937697152444362_n.jpg"
+                        alt="Full halal buffet setup with floral garnish"
+                        class="w-full h-full object-cover transition duration-[900ms] group-hover:scale-105" />
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                        <div class="font-display font-bold text-2xl">Full Buffet Setup</div>
+                        <div class="text-brand-cream/80 text-sm mt-1">Chafing dishes + floral styling included</div>
+                    </div>
+                </div>
+                <div class="col-span-6 md:col-span-5 relative group overflow-hidden rounded-3xl aspect-square shadow-2xl">
+                    <img src="assets/catering/Screenshot 2026-05-24 233040.png"
+                        alt="Close-up of halal chafing dishes"
+                        class="w-full h-full object-cover transition duration-[900ms] group-hover:scale-105" />
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-5">
+                        <div class="font-display font-bold text-lg">Fresh, Plentiful Spreads</div>
+                    </div>
+                </div>
+                <div class="col-span-6 md:col-span-5 relative group overflow-hidden rounded-3xl aspect-square shadow-2xl">
+                    <img src="assets/catering/Screenshot 2026-05-24 233017.png"
+                        alt="Buffet line with fresh fruits"
+                        class="w-full h-full object-cover transition duration-[900ms] group-hover:scale-105" />
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-5">
+                        <div class="font-display font-bold text-lg">Free Mixed Fruits</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature pills + CTA -->
+            <div class="mt-14 max-w-4xl mx-auto">
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/15 px-5 py-2.5 text-sm font-semibold backdrop-blur">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F4A03A" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                        100% Halal Kitchen
+                    </span>
+                    <span class="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/15 px-5 py-2.5 text-sm font-semibold backdrop-blur">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F4A03A" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                        Chafing Dish Setup
+                    </span>
+                    <span class="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/15 px-5 py-2.5 text-sm font-semibold backdrop-blur">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F4A03A" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                        Floral Table Styling
+                    </span>
+                    <span class="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/15 px-5 py-2.5 text-sm font-semibold backdrop-blur">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F4A03A" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                        On-Site Delivery & Setup
+                    </span>
+                    <span class="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/15 px-5 py-2.5 text-sm font-semibold backdrop-blur">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F4A03A" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                        Custom Menus
+                    </span>
+                </div>
+
+                <div class="mt-10 text-center">
+                    <a href="https://www.facebook.com/profile.php?id=61590159478910" target="_blank" rel="noopener"
+                        class="inline-flex items-center gap-2 rounded-full bg-brand-orange hover:bg-brand-orange-deep text-white font-bold px-8 py-4 transition shadow-xl text-base">
+                        Book Your Event
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PARTNERS / TRUST STRIP ============ -->
+    <section class="py-12 bg-brand-cream border-y border-brand-parchment">
+        <div class="max-w-7xl mx-auto px-5 lg:px-10 overflow-hidden">
+            <p class="text-center text-brand-ink/60 text-xs uppercase tracking-[0.3em] font-semibold mb-6">Trusted by families & events across Davao</p>
+            <div class="overflow-hidden">
+                <div class="marquee-track flex gap-12 items-center whitespace-nowrap font-display font-bold text-2xl text-brand-red/40">
+                    <span>★ Halal Certified</span>
+                    <span>•</span>
+                    <span>Fresh Daily</span>
+                    <span>•</span>
+                    <span>Made with Care</span>
+                    <span>•</span>
+                    <span>Perfect for Events</span>
+                    <span>•</span>
+                    <span>Davao City</span>
+                    <span>•</span>
+                    <span>★ Halal Certified</span>
+                    <span>•</span>
+                    <span>Fresh Daily</span>
+                    <span>•</span>
+                    <span>Made with Care</span>
+                    <span>•</span>
+                    <span>Perfect for Events</span>
+                    <span>•</span>
+                    <span>Davao City</span>
+                    <span>•</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT / FOOTER ============ -->
+    <footer id="contact" class="relative bg-brand-ink text-brand-cream overflow-hidden">
+        <div class="absolute inset-0 opacity-20"
+            style="background-image: radial-gradient(circle at 30% 20%, rgba(215, 35, 35, 0.4) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(244, 160, 58, 0.3) 0%, transparent 50%);">
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-5 lg:px-10 py-20 lg:py-24">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-brand-orange font-semibold text-sm tracking-[0.25em] uppercase">Get in Touch</span>
+                <h2 class="mt-3 font-display font-black text-4xl lg:text-5xl title-underline center">
+                    Place Your Order Today
+                </h2>
+                <p class="mt-6 text-brand-cream/80 text-lg">
+                    Message us on Facebook or call directly — we'll get back to you fast.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-4xl mx-auto">
+                <!-- Phone -->
+                <a href="tel:+639937829853"
+                    class="group bg-white/5 hover:bg-white/10 border border-white/10 hover:border-brand-orange/50 rounded-2xl p-6 transition flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand-orange flex items-center justify-center flex-shrink-0 shadow-md">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                            stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="text-xs uppercase tracking-widest text-brand-cream/60 font-semibold">Call / Text</div>
+                        <div class="mt-1 font-display font-bold text-xl group-hover:text-brand-orange transition">0993 782 9853</div>
+                    </div>
+                </a>
+
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/profile.php?id=61590159478910" target="_blank" rel="noopener"
+                    class="group bg-white/5 hover:bg-white/10 border border-white/10 hover:border-brand-orange/50 rounded-2xl p-6 transition flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-[#1877F2] flex items-center justify-center flex-shrink-0 shadow-md">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" class="text-white">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="text-xs uppercase tracking-widest text-brand-cream/60 font-semibold">Facebook</div>
+                        <div class="mt-1 font-display font-bold text-xl group-hover:text-brand-orange transition">Halal Food Package Davao</div>
+                    </div>
+                </a>
+
+                <!-- Hours -->
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-6 flex items-start gap-4 sm:col-span-2 lg:col-span-1">
+                    <div class="w-12 h-12 rounded-xl bg-brand-green flex items-center justify-center flex-shrink-0 shadow-md">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                            stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="text-xs uppercase tracking-widest text-brand-cream/60 font-semibold">Open Daily</div>
+                        <div class="mt-1 font-display font-bold text-xl">7:30 AM – 5:00 PM</div>
+                        <div class="text-sm text-brand-cream/70 mt-0.5">Monday – Sunday</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom strip -->
+            <div class="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-3">
+                    <img src="assets/logo/logo.jpg" alt="Halal Food Package Davao City"
+                        class="h-12 w-12 object-contain bg-white rounded-lg p-0.5" />
+                    <div>
+                        <div class="font-display font-extrabold text-brand-cream tracking-wide">HALAL FOOD PACKAGE</div>
+                        <div class="text-[10px] tracking-[0.25em] text-brand-orange font-semibold uppercase">Davao City</div>
+                    </div>
+                </div>
+                <p class="text-brand-cream/50 text-sm">
+                    © <span id="year"></span> Halal Food Package Davao City.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============ JS ============ -->
+    <script>
+        // Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Count-up animation for hero stats
+        const animateCount = (el) => {
+            const target = parseInt(el.dataset.countTo, 10);
+            const plain = el.dataset.countFormat === 'plain';
+            const duration = 1600;
+            const start = performance.now();
+            const tick = (now) => {
+                const t = Math.min((now - start) / duration, 1);
+                const eased = 1 - Math.pow(1 - t, 3); // easeOutCubic
+                const value = Math.round(target * eased);
+                el.textContent = plain ? value : value.toLocaleString();
+                if (t < 1) requestAnimationFrame(tick);
+            };
+            requestAnimationFrame(tick);
+        };
+        document.querySelectorAll('[data-count-to]').forEach(animateCount);
+
+        // Mobile slideover
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const slideover = document.getElementById('slideover');
+        const setSlideoverOpen = (open) => {
+            slideover.classList.toggle('is-open', open);
+            slideover.setAttribute('aria-hidden', String(!open));
+            mobileBtn.setAttribute('aria-expanded', String(open));
+            document.body.style.overflow = open ? 'hidden' : '';
+        };
+        mobileBtn.addEventListener('click', () => setSlideoverOpen(true));
+        slideover.querySelectorAll('[data-close-slideover]').forEach(el => {
+            el.addEventListener('click', () => setSlideoverOpen(false));
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && slideover.classList.contains('is-open')) {
+                setSlideoverOpen(false);
+            }
+        });
+
+        // Nav scrolled state
+        const nav = document.getElementById('nav');
+        const navInner = nav.querySelector('div');
+        const onScroll = () => {
+            if (window.scrollY > 30) {
+                navInner.classList.add('nav-scrolled');
+            } else {
+                navInner.classList.remove('nav-scrolled');
+            }
+        };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+
+        // Reveal on scroll
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('in');
+                    io.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('section').forEach(s => {
+            s.classList.add('reveal');
+            io.observe(s);
+        });
+    </script>
+</body>
+
+</html>
